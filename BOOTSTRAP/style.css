@@ -1,0 +1,30 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#avatar{
+    border-radius: 50%;
+  
+}
+
+.navbar {
+    background-color: rgb(2, 189, 195);
+}
+
+
+.quem-somos{
+    background-color: rebeccapurple;
+    color: antiquewhite;
+}
+
+.servicos{
+    background-color: rgb(2, 127, 195);
+    color: antiquewhite;
+}
+
+
+
+.margin{
+    padding: 20px 0 20px 0 ;
+}
+
