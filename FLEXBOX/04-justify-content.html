@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - justify-content</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid #000;
+            max-width: 400px;
+            margin: 0;
+            margin-bottom: 10px;
+
+        }
+
+        .column {
+            flex-direction: column;
+            min-height: 300px;
+        }
+
+        .item{
+            background-color: cadetblue;
+            color: aliceblue;
+            margin: 5px;
+            text-align: center;
+            padding: 10px;
+                    
+        }
+
+        .default{
+            justify-content: flex-start;
+        }
+
+        .jc-f-end{
+            justify-content: flex-end;
+        }
+
+        .jc-center{
+            justify-content: center;
+        }
+
+        .jc-space-between{
+            justify-content: space-between;
+        }
+
+        .jc-space-around{
+            justify-content: space-around;
+        }
+
+        .jc-space-evenly{
+            justify-content:space-evenly;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <h1>Justify Content in row</h1>
+    <h2>default: flex-start</h2>
+    <div class="flex-container default">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+
+    <h2>flex-end</h2>
+    <div class="flex-container jc-f-end">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+
+    <h2>center</h2>
+    <div class="flex-container jc-center">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+    
+    <h2>space-between</h2>
+    <div class="flex-container jc-space-between">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+    
+    <h2>space-around</h2>
+    <div class="flex-container jc-space-around">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+    
+    <h2>space-evenly</h2>
+    <div class="flex-container jc-space-evenly">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h1>Justify Content in colunm</h1>
+    <h2>default: flex-start</h2>
+    <div class="flex-container default column ai">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+
+    <h2>flex-end</h2>
+    <div class="flex-container jc-f-end column">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+
+    <h2>center</h2>
+    <div class="flex-container jc-center column">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+    
+    <h2>space-between</h2>
+    <div class="flex-container jc-space-between column">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+    
+    <h2>space-around</h2>
+    <div class="flex-container jc-space-around column">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+    
+    <h2>space-evenly</h2>
+    <div class="flex-container jc-space-evenly column">
+        <div class="item "> 1 </div>
+        <div class="item "> item 2 </div>
+        <div class="item "> outro item </div>
+        <div class="item "> 4 </div>
+    </div>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex flow</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid #000;
+            width: 500px;
+        }
+
+        .item{
+            background-color: cadetblue;
+            color: aliceblue;
+            margin: 5px;
+            text-align: center;
+            height: 50px;
+            width: 100px;
+            line-height: 50px;          
+        }
+
+        .default{
+            flex-flow: row nowrap;
+        }
+
+        .wrap{
+            flex-flow: row wrap;
+        }
+
+        .wrap-reverse{
+            flex-flow: row wrap-reverse;
+        }
+
+
+        
+
+        .blue{
+            background-color: aqua;
+            color: #000;
+        }
+
+        .green{
+            background-color: greenyellow;
+            color: #000;
+        }
+
+        .orange{
+            background-color: orangered;
+            color: #000;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <h1>Flex FLOW</h1>
+    <h2>default: row nowrap</h2>
+    <div class="flex-container default">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+    </div>
+
+    <h2>row wrap</h2>
+    <div class="flex-container wrap">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+    </div>
+
+    <h2>row wrap-reverse</h2>
+    <div class="flex-container wrap-reverse">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+    </div>
+    
+
+    
+</body>
+</html>
